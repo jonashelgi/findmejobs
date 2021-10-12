@@ -1,9 +1,10 @@
 import fetch from 'node-fetch';
 import fs from "fs";
 
-const keywords = ["React", "react", "Prismic", "prismic", "Javascript", "javascript", "Typescript", "typescript"];
+const keywords = ["React", "react", "Prismic", "prismic", "Javascript", "javascript", "Typescript", "typescript", "Node", "node"];
+const url = "https://userapi.alfred.is/api/v1/front-web/jobs?page=1&size=5000&translate=false"
 
-const response = await fetch("https://userapi.alfred.is/api/v1/front-web/jobs?page=1&size=28&translate=false&tags=394,4,238,21,329,11,41,50,14,15,5,12,391,42,22,80,335,74,79,23,52,392,234,13,6", {
+const response = await fetch(url, {
   "headers": {
     "accept": "*/*",
     "accept-language": "is",
@@ -30,7 +31,7 @@ for (let i = 0; i < jobs.length; i++) {
     job.name = jobs[i].brand.name;
     job.title = jobs[i].title;
     job.href = "https://alfred.is/starf/" + jobs[i].slug;
-    job.data = jobs[i].published;
+    job.date = jobs[i].published;
     job.deadline = jobs[i].deadline;
     job.desc = jobs[i].description.replace(/(\r\n|\n|\r)/gm, "");
     goodJobs.push(job);
