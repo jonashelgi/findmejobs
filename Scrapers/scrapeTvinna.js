@@ -6,13 +6,12 @@ const listurl = [
   "https://www.tvinna.is/page/1/",
   "https://www.tvinna.is/page/2/",
   "https://www.tvinna.is/page/3/",
-  // "https://www.tvinna.is/page/4/",
-  // "https://www.tvinna.is/page/5/"
 ];
 
 const jobs = [];
 const goodJobs = [];
 
+// Nær í gögninn með axios og cheerio
 async function asyncTvinna(keywords) {
   try {
     for (let i = 0; i < listurl.length; i++) {
@@ -32,6 +31,7 @@ async function asyncTvinna(keywords) {
       }
     }
 
+    // Skoðar hvort störf uppfylli leitarorða skilyrðinn og flokkar þau.
     console.log("Tvinna job search 50%")
     for (let i = 0; i < jobs.length; i++) {
       var response = await axios.get(jobs[i].href);
@@ -42,6 +42,8 @@ async function asyncTvinna(keywords) {
         console.log("Tvinna job search 75%");
       }
     }
+
+    // Býr til json skjal með öllum niðurstöðunum.
     const jsonContent = JSON.stringify(goodJobs, null, 4);
     fs.writeFile("./Outcome/tvinna.json", jsonContent, 'utf8', function (err) {
       if (err) {

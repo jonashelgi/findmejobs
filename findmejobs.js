@@ -12,7 +12,7 @@ import { scrapeStorf } from "./Scrapers/screpeStorf.js";
 // Sjá afhverju með því að lesa Github readme: https://github.com/jonashelgi/findmejobs
 // Dæmi: const keywords = ["React", "react","Typescript", "typescript", "API"];
 
-const keywords = ["React", "react","Typescript", "typescript", "API"];
+const keywords = ["React", "react", "Typescript", "typescript", "API"];
 
 
 

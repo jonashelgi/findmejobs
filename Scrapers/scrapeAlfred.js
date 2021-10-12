@@ -4,6 +4,9 @@ import fs from "fs";
 const url = "https://userapi.alfred.is/api/v1/front-web/jobs?page=1&size=1000&translate=false"
 
 export async function scrapeAlfred(keywords) {
+
+
+  // Nær í gögn frá Alfred.is API. 
   const response = await fetch(url, {
     "headers": {
       "accept": "*/*",
@@ -25,6 +28,8 @@ export async function scrapeAlfred(keywords) {
   const data = await response.json();
   const jobs = data.jobs;
   const goodJobs = [];
+
+  // Skoðar hvort störf uppfylli leitarorða skilyrðinn og flokkar þau.
   for (let i = 0; i < jobs.length; i++) {
     if (keywords.some(el => jobs[i].description.includes(el))) {
       const job = { name: "", title: "", href: "", date: "", deadline: "", desc: "" };
@@ -37,6 +42,8 @@ export async function scrapeAlfred(keywords) {
       goodJobs.push(job);
     }
   }
+
+  // Býr til json skjal með öllum niðurstöðunum.
   const jsonContent = JSON.stringify(goodJobs, null, 4);
   fs.writeFile("./Outcome/alfred.json", jsonContent, 'utf8', function (err) {
     if (err) {
