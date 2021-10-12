@@ -1,0 +1,2 @@
+Hérna munu öll json skjölin birtast þegar þú keyrir forritið.
+Ef engin skjöl eru hérna þá hefur eitthvað farið úrskeiðis.
