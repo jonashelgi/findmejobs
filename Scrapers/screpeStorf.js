@@ -39,7 +39,6 @@ async function asyncStorf(keywords) {
         var response = await axios.get(jobs[i].href);
         if (keywords.some(el => response.data.includes(el))) {
           goodJobs.push(jobs[i]);
-          console.log(response.data);
         }
       }
 

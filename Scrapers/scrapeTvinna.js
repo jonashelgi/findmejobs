@@ -27,7 +27,7 @@ async function asyncTvinna(keywords) {
         job.date = $(el).children("time").text();
         jobs.push(job);
       });
-      if(i === parseInt(listurl.length/2)){
+      if (i === parseInt(listurl.length / 2)) {
         console.log("Tvinna job search 25%")
       }
     }
@@ -35,10 +35,10 @@ async function asyncTvinna(keywords) {
     console.log("Tvinna job search 50%")
     for (let i = 0; i < jobs.length; i++) {
       var response = await axios.get(jobs[i].href);
-      if (!keywords.some(el => response.data.includes(el))) {
+      if (keywords.some(el => response.data.includes(el))) {
         goodJobs.push(jobs[i]);
       }
-      if(i === parseInt(jobs.length/2)){
+      if (i === parseInt(jobs.length / 2)) {
         console.log("Tvinna job search 75%");
       }
     }
