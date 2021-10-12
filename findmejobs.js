@@ -10,8 +10,9 @@ import { scrapeStorf } from "./Scrapers/screpeStorf.js";
 // Stór eða lítill stafur skiptir máli.
 // Ekki hægt að nota leitarorðin Javascript, HTML og CSS.
 // Sjá afhverju með því að lesa Github readme: https://github.com/jonashelgi/findmejobs
+// Dæmi: const keywords = ["React", "react","Typescript", "typescript", "API"];
 
-const keywords = ["React"];
+const keywords = ["React", "react","Typescript", "typescript", "API"];
 
 
 
