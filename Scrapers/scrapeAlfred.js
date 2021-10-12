@@ -36,7 +36,7 @@ for (let i = 0; i < jobs.length; i++) {
     goodJobs.push(job);
   }
 }
-const jsonContent = JSON.stringify(goodJobs);
+const jsonContent = JSON.stringify(goodJobs, null, 4);
 fs.writeFile("./Outcome/alfred.json", jsonContent, 'utf8', function (err) {
   if (err) {
     return console.log(err);

@@ -24,7 +24,7 @@ async function asyncTvinna(keywords, url) {
         goodJobs.push(jobs[i]);
       }
     }
-    const jsonContent = JSON.stringify(goodJobs);
+    const jsonContent = JSON.stringify(goodJobs, null, 4);
     fs.writeFile("./Outcome/tvinna.json", jsonContent, 'utf8', function (err) {
       if (err) {
         return console.log(err);

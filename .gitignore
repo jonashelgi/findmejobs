@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/Outcome/alfred.json
+/Outcome/tvinna.json
 
 # testing
 /coverage
