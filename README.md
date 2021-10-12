@@ -6,11 +6,12 @@ Ert þú þreytt/ur á að leita í tugi starfsumsókna eftir rétta starfinu?
 Til þess að nota þetta kerfi þarft þú að vera með Node.js á tölvunni. Hægt er downloada því hérna: https://nodejs.org/en/.
 
 ### Notkun: 
-    1. Hlaða niður zip af öllum kóðanum eða clonaðu repoið.
-<br>2. Opna möppuna í command line. (Til dæmis: "cd C:\Users\nafn\findmejobs").
-<br>3. Hlaða niður öllum dependency með "npm install".
-<br>4. Keyra skránna index.js með "node index.js".
-<br>5. Skoða öll störfin sem birtast í Outcome möppunni sem er inn í möppunni sem þú ert í.
+1. Hlaða niður zip eða clona repoið.
+2. Opna möppuna í command line. (Til dæmis: "cd C:\Users\nafn\findmejobs").
+3. Hlaða niður öllum dependency með "npm install".
+4. Opna findmejobs.js og bæta við þínum leitarorðum í keywords.
+5. Keyra skránna index.js með "node index.js".
+6. Skoða öll störfin sem birtast í Outcome möppunni sem er inn í möppunni sem þú ert í.
 
 ### Gallar
 Ekki er hægt að leita af Javascript, HTML og CSS eins og er hjá Tvinna.is og Storf.is þar sem leitað er í HTML kóða hjá þeim.
