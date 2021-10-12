@@ -10,8 +10,8 @@ Til þess að nota þetta kerfi þarft þú að vera með Node.js á tölvunni. 
 2. Opna möppuna í command line. (Til dæmis: "cd C:\Users\nafn\findmejobs").
 3. Hlaða niður öllum dependency með "npm install".
 4. Opna findmejobs.js og bæta við þínum leitarorðum í keywords.
-5. Keyra skránna index.js með "node index.js".
-6. Skoða öll störfin sem birtast í Outcome möppunni sem er inn í möppunni sem þú ert í.
+5. Keyra skránna findmejobs.js með "node findmejobs.js" frá command line.
+6. Skoða öll störfin sem birtast í Outcome möppunni.
 
 ### Gallar
 Ekki er hægt að leita af Javascript, HTML og CSS eins og er hjá Tvinna.is og Storf.is þar sem leitað er í HTML kóða hjá þeim.
