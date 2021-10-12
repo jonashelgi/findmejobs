@@ -13,8 +13,8 @@ const keywords = ["React", "react", "Prismic", "prismic", "Javascript", "javascr
 
 
 function index() {
-  // scrapeAlfred(keywords, url.alfred);
-  scrapeTvinna(keywords, url.tvinna);
+  scrapeAlfred(keywords, url.alfred);
+  // scrapeTvinna(keywords, url.tvinna);
 }
 
 index();
