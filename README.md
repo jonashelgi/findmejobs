@@ -23,4 +23,4 @@ Ekki er hægt að leita af Javascript, HTML og CSS eins og er hjá Tvinna.is og 
 Ætti einungis að taka nokkrar sec að fá niðurstöður.
 
 ### Tvinna.is & Storf.is
-Ætti að taka 3mín að fá niðurstöður fyrir hverja síðu.
+Ætti að taka 3mín að fá niðurstöður.
